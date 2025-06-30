@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { RiMenu4Fill } from "react-icons/ri";
 
 function Nav() {
   console.log(logo);
@@ -24,11 +23,7 @@ function Nav() {
             </div>
           </div>
           <div className="menu">
-            <FontAwesomeIcon
-              icon={faBars}
-              className="hamburger"
-              onClick={toggleMenu}
-            />
+            <RiMenu4Fill className="hamburger" onClick={toggleMenu} />
             <ul className={isOpen ? "active" : ""}>
               <li>
                 <Link to="/">Home</Link>
