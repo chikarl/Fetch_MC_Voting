@@ -16,7 +16,7 @@ const categories = [
 ];
 
 const CategoriesSection = () => {
-  const [categories, setCategories] = useState([]);
+  // const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     axios
